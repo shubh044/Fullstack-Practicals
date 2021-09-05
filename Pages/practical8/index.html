@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <style>
+        .header{
+            background-color: grey;
+            color: white;
+            padding: 5px;
+            text-align: center;
+            font-size: 20px;
+            margin: 30px 40px 0px 40px;
+        }
+        .banner{
+            background-image: url(../../images/bckgnd.jpg);
+            background-size: 1200px 800px;
+            margin: 10px 40px 10px 40px;
+            width: 93.5%;
+            height: 600px;
+        }
+        .main-nav{
+            list-style: none;
+            position: fixed;
+            overflow: hidden;
+            background-color: grey;
+            padding: 5px;
+            margin: 10px 0px 60px 15px;
+            top: 0;
+            width: 90%;
+        }
+        .main-nav li{
+           display: inline-block;
+           margin-left: 100px; 
+        }
+        .main-nav li a:link,
+        .main-nav li a:visited{
+           text-decoration: none;
+           color: white;
+        }
+        .main-nav li a:hover,
+        .main-nav li a:active{
+            background-color: white;
+            color: black;
+            padding: 8px 0;
+        }
+        .sticky{
+            position: fixed;
+        }
+        .circle{    
+            background-color: rgb(214, 140, 28);
+            width: 20%;
+            height: 220px;
+            border-radius: 50%;
+            float: left;
+            margin: 0px 30px 10px 20px;
+        }
+        .circular-box{
+            margin-left: 40px;
+        }
+        .main{
+            display: flex;
+            margin-left: 10px;
+            margin-top: 20px;
+            margin-bottom: 50px;
+            display: flex;
+        }
+        .rect-box{
+            margin-left: 40px;
+        }
+        .rect{
+            background-color: rgb(230, 101, 15);
+            width: 20%;
+            height: 250px;
+            float: left;
+            margin: 0px 30px 25px 20px;
+        }
+        .art{
+            margin-left: 20px;
+            margin-bottom: 10px;
+            
+        }
+        .article{
+            margin: 0px 40px 10px 30px;
+            background-color: rgb(236, 125, 73);
+            padding: 20px;
+            width: 500px;
+            text-align: center;
+            margin: 0px 40px 10px 0px;
+            color: white;
+        }
+        .footer{
+            background-color: rgba(238, 130, 238, 0.822);
+            text-align: center;
+            padding: 5px;
+            margin: 20px 40px 30px 40px;
+            color: white;
+            font-size: 20px;
+        }
+        .bck{
+            width: 93.5%;
+            height: 600px;
+            margin: 10px 40px 10px 40px;
+        }
+        .top-left{
+            position: absolute;
+            top: 90px;
+            left: 70px;
+            color: white;
+            font-size: 40px;
+        }
+        .heading{
+            margin-top: 50px;
+            text-align: center;
+            font-size: 40px;
+        }
+        .heading2{
+            text-align: center;
+            font-size: 40px;
+            margin-top: 400px;
+        }
+        .main-content{
+            background-color: rgb(100,100,100);
+            color: white;
+            margin-left: 40px;
+            margin-top: 20px;
+        }
+        .heading3{
+            font-size: 25px;
+            color: white;
+            margin: 10px;
+        }
+        .project1{
+            background-image: url(../../images/project1.jpg);
+            width: 600px;
+            height: 100px;
+            margin-left: 10px;
+            margin-right: 40px;
+            text-align: center;
+            font-size: 20px;
+        }
+        .project2{
+            background-image: url(../../images/project2.jpg);
+            width: 600px;
+            height: 100px;
+            margin-left: 10px;
+            margin-right: 40px;
+            text-align: center;
+            font-size: 20px;
+        }
+        .project3{
+            background-image: url(../../images/project3.jpg);
+            width: 600px;
+            height: 100px;
+            margin-left: 10px;
+            margin-right: 40px;
+            text-align: center;
+            font-size: 20px;
+        }
+        .button{
+            text-decoration: none;
+            background-color: red;
+            color:white;
+            margin: 20px 10px 30px 115px;
+            padding: 5px;
+            border-radius: 5px; 
+        }
+        .button:hover{
+            background-color: blue;
+        }
+        .boot{
+            margin-bottom: 33px;
+            text-align: center;
+        }
+        .para{
+            text-align: justify;
+            padding: 0px 20px 0px 20px;
+        }
+        .images{
+            margin: 15px 20px 0px 19px;
+            width: 260px;
+            height: 160px;
+            border-radius: 10px;
+        }
+        .column{
+            display: flex;
+            width: 100%;
+            margin-top: 50px;
+        }
+        .row{
+            border-radius: 10px;
+            background-color: white;
+            display: inline-block;
+            width: 23.6%;
+            margin-left: 14px;
+            padding-bottom: 40px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        .h3{
+            text-align: center;
+        }
+        .rect-box{
+            background-color: rgb(180,180,180);
+        }
+        .heading{
+            color: black;
+            text-align: center;
+        }
+        .foot_para{
+            color: black;
+            font-size: 20px;
+        }
+    </style>
+    <title>Assignment 8</title>
+</head>
+<body>
+    <div class="header" id="Home">
+        <nav>
+           <ul class="main-nav">
+                <li><a href="#Home">HOME</a></li>
+                <li><a href="#Aboutus">ABOUT US</a></li>
+                <li><a href="#team">TEAM</a></li>
+                <li><a href="#tech">TECHNOLOGIES</a></li>
+                <li style="margin-right: 70px;"><a href="#contact">CONTACT</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="banner">
+        <p class="top-left"><b>PRACTICAL - 8</b></p>
+    </div>
+    <h2 class="heading" id="team">Team Members</h2>  
+    <div class="circular-box">
+        <img src="../../images/dummy1.png" class="circle"></img>
+        <img src="../../images/dummy2.png" class="circle"></img>
+        <img src="../../images/dummy3.png" class="circle"></img>
+        <img src="../../images/dummy4.png" class="circle"></img>
+    </div>
+    <h2 class="heading2" id="Aboutus">About us</h2>
+    <div class="main">
+        <div class="main-content">
+            <h3 class="heading3">About Projects</h3>
+            <p class="main">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea labore adipisci, optio quasi tempora laudantium fugiat nihil perferendis ipsa delectus dignissimos eaque ex illum itaque commodi deserunt quae ut et ratione officiis enim est amet nobis. Molestias culpa veritatis et iure totam consequuntur laudantium sapiente modi? Iusto eum odio deleniti delectus! Voluptatem assumenda odio temporibus, architecto vero reprehenderit tenetur cum molestias nemo nisi, velit, optio modi harum voluptas blanditiis error. Dolor ducimus iure enim, atque expedita nesciunt reiciendis distinctio veniam deleniti dolorem quas fugiat voluptates porro odio voluptatem ipsum harum officia asperiores, eveniet fuga! Veniam quaerat magni officiis sequi voluptas?</p>
+        </div>
+        <div class="project">        
+            <div class="project1">
+                <p><b>Project-1</b></p>
+            </div>
+            <div class="project2">
+                <p><b>Project-2</b></p>
+            </div>
+            <div class="project3">
+                <p><b>Project-3</b></p>
+            </div>
+        </div>
+    </div>
+    <div class="heading">
+        <p id="tech"><b>Technologies Used</b></p>
+    </div>
+    <div class="rect-box">
+        <div class="column">
+            <div class="row">
+                <img src="../../images/html.png" class="images">
+                <h3 class="h3">Introduction to HTML</h3>
+                <p class="para">The HyperText Markup Language, or HTML is the standard markup language for documents designed to be displayed in a web browser.</p>        
+                <a class="button" href="./1_html.html">Read More</a></a>
+            </div>
+            <div class="row">
+                <img src="../../images/css.png" class="images">
+                <h3 class="h3">Introduction to CSS</h3>
+                <p class="para">Cascading Style Sheets (CSS) is a stylesheet language used to describe the presentation of a document written in HTML.</p>
+                <a class="button" href="./2_css.html">Read More</a>
+            </div>
+            <div class="row">
+                <img src="../../images/javascript.png" class="images">
+                <h3 class="h3">Introduction to JavaScript</h3>
+                <p class="para">JavaScript is a very powerful client-side scripting language. It is used mainly for enhancing the interaction of a user with the webpage.</p>
+                <a class="button" href="./3_js.html">Read More</a>
+            </div>
+            <div class="row">
+                <img src="../../images/bootstrap.jpg" class="images">
+                <h3 class="h3">Introduction to Bootstrap</h3>
+                <p class="boot">Bootstrap is a free and open source front end development framework for the creation of websites and web apps.</p>
+                <a class="button" href="./4_bootstrap.html">Read More</a>
+            </div>
+        </div>
+    </div>
+    <h3 class="heading" id="contact">Contact</h3>
+    <div class="footer">
+        <p class="foot_para"><b>Website Template for Practical-8</b></p>
+        <a href="#Home">Back to top</a>
+    </div>    
+</body>
+</html>
