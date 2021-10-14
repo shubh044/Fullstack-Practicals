@@ -29,26 +29,26 @@
     <h1 style="text-align: center; color: orangered; margin-top: 50px; margin-bottom: 50px;">COUNTER</h1>
     <script type="text/javascript">
     var click = 0;
-    B.disabled = true;
     function oclick(){
         click += 1;
         document.getElementById("click").innerHTML = click;
     };
     function inclick(){
-        document.getElementById("click").innerHTML = click;
-        if(click==0 || click<0)
+        if(click>0){
+            click -= 1;
+            click.disabled = false;
+            document.getElementById("click").innerHTML = click;
+        }
+        else(click==0 || click<0)
         {
             click.disabled = true;
-        }
-        else{
-            click.disabled = false;
-            click -= 1;
+            document.getElementById("click").disabled = true;
         }
     };
     </script>
     <button class="button" type="button" onclick="oclick()">+</button>
     <a style="font-size: 40px; margin: 50px;" id="click">0</a>
-    <button class="button" id="B" type="button" onclick="inclick()">-</button>
+    <button class="button" type="button" onclick="inclick()" style="width: 40px;">-</button>
 
 </body>
 </html>
